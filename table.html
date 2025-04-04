@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة المواعيد</title>
+    <link rel="stylesheet" href="TableST.css" />
+</head>
+<body>
+
+<h1>قائمة المواعيد</h1>
+<table>
+    <thead>
+        <tr>
+            <th>اسم المريض</th>
+            <th>رقم الهاتف</th>
+            <th>التاريخ المطلوب</th>
+            <th>تخصص الطبيب</th>
+        </tr>
+    </thead>
+    <tbody id="appointmentTable">
+        <!-- سيتم إدخال البيانات هنا -->
+    </tbody>
+</table>
+
+<button class="reset-btn" onclick="resetTable()">مسح جميع البيانات</button>
+
+<script src="script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    loadAppointments();
+});
+
+// تحميل المواعيد من localStorage وعرضها في الجدول
+function loadAppointments() {
+    let appointments = JSON.parse(localStorage.getItem("appointments")) || [];
+    let table = document.getElementById("appointmentTable");
+    table.innerHTML = ""; // مسح الجدول قبل إعادة تحميل البيانات
+
+    if (appointments.length > 0) {
+        appointments.forEach(appointment => {
+            let row = `<tr>
+                        <td>${appointment.name}</td>
+                        <td>${appointment.phone}</td>
+                        <td>${appointment.date}</td>
+                        <td>${appointment.specialty}</td>
+                       </tr>`;
+            table.innerHTML += row;
+        });
+    } else {
+        table.innerHTML = `<tr><td colspan="4">لا توجد مواعيد مسجلة</td></tr>`;
+    }
+}
+
+// مسح جميع البيانات
+function resetTable() {
+    localStorage.removeItem('appointments');
+    loadAppointments(); // تحديث الجدول بعد المسح
+}
+</script>
+
+</body>
+</html>

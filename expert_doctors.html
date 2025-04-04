@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../image/icon2.jpg">
+    <title>Expert Doctors</title>
+</head>
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+section:nth-child(even){
+    background: #6be6f9;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color:var(--black);
+    font-size: 5rem;
+    letter-spacing: .4rem;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color:#36098d;
+}
+
+
+.header{
+    padding:2rem 9%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: #36098d;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+    color: #36098d;
+}
+
+
+
+
+.doctors .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+}
+
+.doctors .box-container .box{
+    text-align: center;
+    background:#fff;
+    border-radius: .5rem;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+}
+
+.doctors .box-container .box img{
+    height: 20rem;
+    border:var(--border);
+    border-radius: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.doctors .box-container .box h3{
+    color:var(--black);
+    font-size: 2.5rem;
+}
+
+.doctors .box-container .box span{
+    color:#36098d;
+    font-size: 1.5rem;
+}
+
+.doctors .box-container .box .share{
+    padding-top: 2rem;
+}
+
+.doctors .box-container .box .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color:#36098d;
+    border-radius: .5rem;
+    border:var(--border);
+    margin:.3rem;
+}
+
+.doctors .box-container .box .share a:hover{
+    background:#36098d;
+    color:#fff;
+    box-shadow: var(--box-shadow);
+}
+
+
+
+    </style>
+
+    <section class="doctors" id="doctors">
+
+        <h1 class="heading"> our <span>doctors</span> </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="../image/doc-1.jpg" alt="">
+                <h3>izzie stevens</h3>
+                <span>dermatologist</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/doc-2.jpg" alt="">
+                <h3>drake ramoray</h3>
+                <span>neurosurgeon</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/doc-3.jpg" alt="">
+                <h3>harry connick</h3>
+                <span>oncologist</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/doc-4.jpg" alt="">
+                <h3>james pickens</h3>
+                <span>pulmonologist</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/doc-5.jpg" alt="">
+                <h3>john becker</h3>
+                <span>cardiologist</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/doc-6.jpg" alt="">
+                <h3>thomas anderson</h3>
+                <span>surgeon</span>
+            </div>
+
+
+            <div class="box">
+                <img src="../image/c9e0b5e45aad1de8e27b25ec6ce3cd27.jpg" alt="">
+                <h3>Emily Johnson</h3>
+                <span>surgeon</span>
+            </div>
+
+
+            <div class="box">
+                <img src="../image/d3.jpg" alt="">
+                <h3> James Carter</h3>
+                <span>surgeon</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/d2.jpg" alt="">
+                <h3>Sarah Williams</h3>
+                <span>surgeon</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/d4.jpg" alt="">
+                <h3>Laura Smith</h3>
+                <span>surgeon</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/d5.jpg" alt="">
+                <h3>Michael Johnson</h3>
+                <span>surgeon</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/d6.jpg" alt="">
+                <h3> David Smith</h3>
+                <span>surgeon</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/d7.jpg" alt="">
+                <h3>Robert Williams</h3>
+                <span>surgeon</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/d8.jpg" alt="">
+                <h3>Olivia Davis</h3>
+                <span>surgeon</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/d9.jpg" alt="">
+                <h3>Daniel Brown</h3>
+                <span>surgeon</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/d10.jpg" alt="">
+                <h3>Sophia Martinez</h3>
+                <span>surgeon</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/d11.jpg" alt="">
+                <h3>Christopher Jones</h3>
+                <span>surgeon</span>
+            </div>
+    
+            <div class="box">
+                <img src="../image/d12.jpg" alt="">
+                <h3>Andrew Lewis</h3>
+                <span>surgeon</span>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+</body>
+</html>
